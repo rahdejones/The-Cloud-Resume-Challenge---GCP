@@ -1,0 +1,97 @@
+:root {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card: #1e293b;
+  --accent: #38bdf8;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: #e2e8f0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+.header-actions {
+  margin-top: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+section {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-grid span {
+  background: var(--card);
+  padding: 8px 12px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+/* CERTIFICATIONS */
+.cert-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cert {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* BLOG */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
