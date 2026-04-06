@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud Architect Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>John Doe</h1>
+  <p>GCP Cloud Architect | DevOps | Infrastructure Specialist</p>
+
+  <div class="header-actions">
+    <button onclick="downloadResume()">Download Resume</button>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#certs">Certifications</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+  <p>
+    Certified Google Cloud Architect specializing in scalable,
+    secure, and cost-efficient cloud systems.
+  </p>
+</section>
+
+<section id="skills" class="fade-in">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span>GCP</span>
+    <span>Kubernetes</span>
+    <span>Terraform</span>
+    <span>Cloud Run</span>
+    <span>BigQuery</span>
+    <span>CI/CD</span>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="fade-in">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+    <div class="cert">
+      <h3>Professional Cloud Architect</h3>
+      <p>Google Cloud</p>
+    </div>
+    <div class="cert">
+      <h3>Associate Cloud Engineer</h3>
+      <p>Google Cloud</p>
+    </div>
+    <div class="cert">
+      <h3>Professional DevOps Engineer</h3>
+      <p>Google Cloud</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="fade-in">
+  <h2>Experience</h2>
+  <div class="job">
+    <h3>Senior Cloud Architect</h3>
+    <p>TechCorp Inc.</p>
+    <ul>
+      <li>Designed multi-region GCP systems</li>
+      <li>Reduced cost by 30%</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Real-Time Data Pipeline</h3>
+    <p>Pub/Sub + Dataflow + BigQuery</p>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="fade-in">
+  <h2>Cloud Case Studies</h2>
+  <div id="blogContainer" class="blog-grid"></div>
+</section>
+
+<section id="contact" class="fade-in">
+  <h2>Contact</h2>
+  <p>Email: johndoe@email.com</p>
+</section>
+
+<footer>
+  <p>© 2026 John Doe</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
